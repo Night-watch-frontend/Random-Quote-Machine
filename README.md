@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# Random quote machine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://night-watch-frontend.github.io/Random-Quote-Machine/
 
-Currently, two official plugins are available:
+## Вэб приложение для получения какой нибудь случайной цитаты известных авторов.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+При загрузке показывается случайная цитата
+При клике по кнопке "Get a new quote" можно получить следующую случайную цитату
 
-## Expanding the ESLint configuration
+Реализовано на React Js
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Установка
 
-- Configure the top-level `parserOptions` property like this:
+1. Клонирование репозитория
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+`git clone https://github.com/Night-watch-frontend/Random-Quote-Machine.git`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Переход в директорию neoflex-test
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+`cd Random-Quote-Machine`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. запуск команды установки
+
+`npm i`
+
+4. запуск команды для открытия проекта на локальном сервере
+
+`npm run dev`
+
+5. запуск команды для сборки проекта в продакшн
+
+`npm run build`
+
+6. запуск команды для просмотра собранного в продакшн проекта
+
+`npm run preview`
+
+## При разработке были использованы npm пакеты:
+
+    "react": "^18.3.1",
+
+    "react-dom": "^18.3.1",
+
+    "@eslint/js": "^9.9.0",
+
+    "@types/react": "^18.3.3",
+
+    "@types/react-dom": "^18.3.0",
+
+    "@vitejs/plugin-react": "^4.3.1",
+
+    "eslint": "^9.9.0",
+
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+
+    "eslint-plugin-react-refresh": "^0.4.9",
+
+    "globals": "^15.9.0",
+
+    "typescript": "^5.5.3",
+
+    "typescript-eslint": "^8.0.1",
+
+    "vite": "^5.4.1"
