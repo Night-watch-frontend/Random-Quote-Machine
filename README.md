@@ -2,7 +2,7 @@
 
 https://night-watch-frontend.github.io/Random-Quote-Machine/
 
-## Вэб приложение для получения какой нибудь случайной цитаты известных авторов.
+## Вэб приложение для получения случайной цитаты известных авторов.
 
 При загрузке показывается случайная цитата
 При клике по кнопке "Get a new quote" можно получить следующую случайную цитату
@@ -15,7 +15,7 @@ https://night-watch-frontend.github.io/Random-Quote-Machine/
 
 `git clone https://github.com/Night-watch-frontend/Random-Quote-Machine.git`
 
-2. Переход в директорию neoflex-test
+2. Переход в директорию Random-Quote-Machine
 
 `cd Random-Quote-Machine`
 
